@@ -10,17 +10,36 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application {
+	
+	private static Stage stage;
+	private static Scene mainSceneLogin;
+	private static Scene mainSceneRegister;
+	
 	@Override
-	public void start(Stage stage) {
+	public void start(Stage primaryStage) {
 		try {
-			Parent parent = FXMLLoader.load(getClass().getResource("/gui/ViewLogin.fxml"));
-			Scene scene = new Scene(parent);
-			stage.setScene(scene);
+			
+			stage = primaryStage;
+			Parent sceneLogin = FXMLLoader.load(getClass().getResource("/gui/ViewLogin.fxml"));
+			mainSceneLogin = new Scene(sceneLogin);
+			
+			Parent sceneRegister = FXMLLoader.load(getClass().getResource("/gui/ViewRegister.fxml"));
+			mainSceneRegister = new Scene(sceneRegister);
+			
+			stage.setScene(mainSceneLogin);
 			stage.show();
 			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public static void setSceneLogin() {
+		stage.setScene(mainSceneLogin);
+	}
+	
+	public static void setRegisterScene() {
+		stage.setScene(mainSceneRegister);
 	}
 	
 	public static void main(String[] args) {

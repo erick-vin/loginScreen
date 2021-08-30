@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="312.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ViewRegisterController">
+   <children>
+      <Button fx:id="buttonRegister" layoutX="105.0" layoutY="254.0" mnemonicParsing="false" onAction="#onButtonRegisterAction" prefHeight="25.0" prefWidth="69.0" text="Register" />
+      <TextField fx:id="textFieldName" layoutX="105.0" layoutY="37.0" />
+      <TextField fx:id="textFieldPassword" layoutX="105.0" layoutY="76.0" />
+      <TextField fx:id="textFieldEmail" layoutX="105.0" layoutY="119.0" />
+      <TextField fx:id="textFieldNameMother" layoutX="105.0" layoutY="164.0" />
+      <TextField fx:id="textFieldNameFather" layoutX="105.0" layoutY="211.0" />
+      <Label layoutX="26.0" layoutY="41.0" text="Name" />
+      <Label layoutX="26.0" layoutY="80.0" text="Password" />
+      <Label layoutX="26.0" layoutY="123.0" text="Email" />
+      <Label layoutX="26.0" layoutY="168.0" text="Name Mother" />
+      <Label layoutX="26.0" layoutY="215.0" text="Name Father" />
+      <Label fx:id="labelName" layoutX="275.0" layoutY="41.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEmail" layoutX="275.0" layoutY="123.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNameMother" layoutX="275.0" layoutY="168.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelNameFather" layoutX="275.0" layoutY="215.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelPassword" layoutX="275.0" layoutY="80.0" textFill="RED">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="test" layoutX="183.0" layoutY="254.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="69.0" text="Back" />
+   </children>
+</AnchorPane>
